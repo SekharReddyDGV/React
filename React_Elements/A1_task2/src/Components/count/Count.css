@@ -1,0 +1,19 @@
+.CounterBlock{
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    color: rgb(254, 246, 11);
+    background: linear-gradient(to left, rgb(110, 163, 172),rgb(100, 154, 100));
+     
+}
+
+.Inc{
+    padding: 8px 15px;
+    background-color: rgb(80, 247, 9);
+    font-weight: bolder;
+    margin-top: 20px;
+
+
+}

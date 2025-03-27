@@ -1,0 +1,12 @@
+.listBox{
+    width: 250px;
+    margin: 20px auto;
+    padding: 30px;
+    border: solid 5px red;
+}
+
+.listBox li{
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(247, 76, 8);
+}
