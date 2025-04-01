@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nested Elements</title>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <script>
+                var h1 = React.createElement('h1',{style :{
+                    color: 'blue'
+                }},"Nested React Elements");
+                var paragraph = React.createElement('p',null,"React is a javascript file,its contains pre-defined functions,classes and methods");
+                var btn = React.createElement('button',{style:{
+                    color: 'violet',
+                    backgroundColor: 'black',
+                    fontWeight:'bold',
+                }},'Click Here');
+                var div = React.createElement('div',{
+                    style:{
+                        boxShadow:'0 0 10px black',
+                        padding:'10px',
+                    }
+                },[paragraph,btn]);
+
+                ReactDOM.render([h1,div],document.getElementById('root'));
+            </script>
+        </div>
+    </body>
+</html>

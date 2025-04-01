@@ -1,0 +1,12 @@
+.Form{
+    margin: 30px auto;
+    border: 5px solid blue;
+    width: 30%;
+    padding: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+

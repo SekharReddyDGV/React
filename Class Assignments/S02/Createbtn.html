@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating Elements</title>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+
+    <body>
+        <script>
+            var ButtonElement = React.createElement("button",null,"click here");
+            // var Heading1 = React.createElement("h1" , null ,"React Heading1");
+
+            ReactDOM.render(ButtonElement, document.querySelector("body"));
+            // ReactDOM.render(Heading1, document.querySelector("body"));
+        </script>
+    </body>
+</html>

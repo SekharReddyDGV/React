@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                color: rgb(255, 94, 0);
+            }
+            button{
+                color: white;
+                background-color: blue;
+                margin: 10px 25px;
+                font-size: 16px;
+                padding: 5px 8px;
+                font-weight: bold;
+            }
+        </style>
+        <title>Create JS DOM Element</title>
+    
+    </head>
+    <body>
+        <h1>React Element</h1>
+        <script>
+            var btn = document.createElement("button");
+            btn.innerText ="React Button";
+            document.querySelector("body").appendChild(btn);
+
+        </script>
+        
+    </body>
+</html>

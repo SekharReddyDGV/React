@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Netflix UI</title>
+        <script src="https://unpkg.com/react@18/umd/react.development"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <style>
+            *{
+                margin: 0;
+            }
+        .Items{
+            margin:20px
+        }
+        
+         body{
+            background: black;
+        }
+            
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+            function content(){
+                var h1 = React.createElement("h1",{className: "Items" ,},"Unlimited movies, TV shows and more");
+                var h3 = React.createElement("h3",{className: "Items"},"Starts at ₹149. Cancel at any time.");
+                var h5 = React.createElement("h5",{className: "Items"},"Ready to watch? Enter your email to create or restart your membership.");
+                
+                var addressBox = React.createElement("input",{type:"email",placeholder:"Email Address",size:'50',className: "Items",
+                    style:{
+                        height:'35px',
+                    }
+                });
+                var Button = React.createElement("button",{className: "Items",
+                    style:{
+                        backgroundColor:'red',
+                        color:'white',
+                        fontSize:'16px',
+                        padding:10,
+                    }
+                },"Get Started");
+                
+                var Div1 = React.createElement("div",{ 
+                    style:{
+                    color:'white',
+                    // boxShadow: '0 5px 5px  black',
+                    // backgroundColor: "rgba(0,0,0,0.5)",
+                    zIndex: 10,
+                    position: 'absolute',
+                    top:300,
+                    left:500,
+                
+                }},[h1,h3,h5,addressBox,Button]);
+                return Div1;
+            }
+
+            function Main(){
+                var Mdiv = React.createElement("div",{ style:{   
+                    backgroundImage:" url('https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg')",
+                    backgroundSize: 'cover', 
+                    backgroundRepeat: 'no-repeat', 
+                    opacity:0.2,
+                    height: '100vh', 
+                    width: '100%',
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center',
+                    zIndex :-10,
+                    position:"absolute"
+                }});
+                return Mdiv;
+            }
+
+            function net(){
+                var flix = React.createElement("div",{},[content(),Main()]);
+                return flix;
+            }
+            ReactDOM.render(net(),document.getElementById("root"));
+        </script>
+    </body>
+</html>

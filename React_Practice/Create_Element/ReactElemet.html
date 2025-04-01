@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React Element</title>
+        <style>
+            *{
+                margin:10px 25px;
+            }
+            .heading{
+                color: red;
+            }
+            button{
+                background-color: blue;
+                color: white;
+                font-size: 16px;
+            }
+        </style>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+           <script>
+            var h1 = React.createElement("h1",{className:'heading'},"React Element");
+            var btn = React.createElement("button",{},'React Button');
+
+            ReactDOM.render([h1,btn],document.querySelector("body"));
+           </script>
+    </body>
+</html>

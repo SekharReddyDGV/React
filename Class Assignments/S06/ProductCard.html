@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .container{
+            width: 330px;
+            height: 450px;
+            text-align: center;
+            box-shadow: 0px 0px 8px blue;
+        }
+        button{
+            margin: 5px 10px;
+        }
+        #root{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+    <head>
+        <title>PRODUCT Cards</title>
+        <script src="https://unpkg.com/react@18/umd/react.development"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+
+            function Card(){
+                return <div className="container">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/bw/models/colors/honda-select-model-mat-axis-gray-metallic-2023-1686743300648.png?q=80" alt="BikeImage" width="300px" height="250"/>
+                    <h2>UNICORN</h2>
+                    <p>Price: Honda Unicorn price for its variant - Unicorn Standard starts at Rs. 1,11,493. The mentioned Unicorn price is the average ex-showroom.</p>
+                    <button>Add to cart</button>
+                    <button>Buy</button>
+                    </div>
+            }
+            
+            ReactDOM.render([<Card/>,<Card/>,<Card/>,<Card/>,],document.getElementById("root"));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>creating UI cards</title>
+        <script src="https://unpkg.com/react@18/umd/react.development"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+
+    <body>
+        <div id="root"></div>
+        <script>
+            function carditems(heading,Paragraph,url){
+                var h3 = React.createElement("h3",null, heading );
+
+                var P = React.createElement("p",null,Paragraph);
+                
+                var div1 = React.createElement("div",{
+                    style:{
+                        width:180,
+                        height:190,
+                        margin:10,
+                        textAlign:"justify"
+                    }
+                },[h3,P]);
+                
+                var Image = React.createElement("img",{
+                    src : url,
+                    width : 150,
+                    height :"90%",
+                });
+
+                var div2 = React.createElement("div",{
+                    style:{
+                        width:160,
+                        height:190,
+                        
+                        margin:10
+                    }
+                },Image);
+                var cardpart = React.createElement("div",{
+                    style:{
+                        boxShadow:"0 5px 10px black",
+                        width:350,
+                        height:220,
+                        textAlign:"center",
+                        display:"flex",
+                        marginTop:40
+                    }
+                },[div1,div2]);
+
+                return cardpart;
+            }
+
+            function Maincontain(){
+                var MainDiv = React.createElement("div",{
+                    style:{
+                            display:"flex",
+                            justifyContent: "space-evenly",
+                }},
+                [carditems("HTML","HTML is markup language.To create UI Components,Collection of UI Components are called User Interface.", "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png"),
+                carditems("CSS","Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSqlnC8KLtpO2eEze1Bi18xqzgeyKfCjV3FA&s"),
+                carditems("Java Script","JavaScript is a versatile, high-level programming language primarily used for creating dynamic and interactive content on websites..","https://static-00.iconduck.com/assets.00/javascript-js-icon-512x512-q3igwln6.png"),
+                carditems("ReactJs","React is a free and open-source front-end JavaScript library for building user interfaces based on components","https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png")
+                ]);
+                return MainDiv;
+            }
+            ReactDOM.render(Maincontain(), document.getElementById("root"));
+        </script>
+    </body>
+</html>

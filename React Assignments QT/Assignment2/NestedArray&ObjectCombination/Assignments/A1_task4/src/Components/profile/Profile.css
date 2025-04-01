@@ -1,0 +1,17 @@
+.profileDiv{
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    width: 350px;
+    margin: 20px auto;
+    padding: 10px;
+    color: rgb(53, 5, 98);
+}
+
+.profileDiv h2{
+    color: red;
+    padding: 8px;
+}
+
+.profileDiv h3{
+    padding: 10px;
+}

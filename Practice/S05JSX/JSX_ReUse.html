@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Heading</title>
+        <style>
+            #card{
+                width: 270px;
+                height: 350px;
+                box-shadow: 0 0 10px black;
+                padding: 5px;
+                text-align: center;
+                font-family:Calibri;
+            }
+            #container{
+                display: flex;
+                justify-content: space-evenly;
+            }
+        </style>
+        <script src="https://unpkg.com/react@18/umd/react.development"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            function Create(Image,Name){
+                return (
+                    <div id="card">
+                        <img src={Image} width="260px" height="300px" alt=""/>
+                        <h3>{Name}</h3>
+                    </div>
+                );
+            }
+
+            function container(){
+                return (<div id="container">
+                {Create("https://media.npr.org/assets/img/2024/03/03/ap24063160825614-9d604c3b01e95a989b89bed8184091ab0c967ef3.jpg?s=1100&c=85&f=jpeg","Lebron James")}
+                {Create("https://frontofficesports.com/wp-content/uploads/2023/10/USATSI_19435449_168393969_lowres-scaled-e1697819953633.jpg?quality=100","Stephen Curry")}
+                {Create("https://media.bleacherreport.com/image/upload/w_800,h_533,c_fill/v1696195351/rky9ywp3t27nddqopxic.jpg","Kobe Bryant")}
+                {Create("https://i.pinimg.com/736x/8f/76/aa/8f76aacf2d04af89f6b8bc5cef6fbc61.jpg","Michal Jordan")}
+                </div>);
+            }
+            ReactDOM.render(container(),document.getElementById("root"));
+        </script>
+    </body>
+</html>

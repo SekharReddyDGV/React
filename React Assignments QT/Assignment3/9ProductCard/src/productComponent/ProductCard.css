@@ -1,0 +1,17 @@
+.cardContainer{
+    width: 350px;
+    height: 380px;
+    box-shadow: 0 0 10px black;
+    margin: 50px auto;
+    text-align: center;
+}
+.carddetails h3,h4,div{
+    margin-top: 15px;
+}
+
+.cardContainer div button{
+    background-color: aquamarine;
+    padding: 5px 10px;
+    font-weight: bold;
+    
+}

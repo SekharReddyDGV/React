@@ -1,0 +1,16 @@
+.grid-item{
+    background-color: aquamarine;  
+    height: 60px; 
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 40px ;
+}

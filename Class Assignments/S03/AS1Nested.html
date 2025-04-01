@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Two Divs In Div</Title>
+        <script src="https://unpkg.com/react@18/umd/react.development"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        
+        <script>
+            var h2 = React.createElement("h2",null,"React JS");
+            var FristDiv = React.createElement("div",
+                {
+                    style:{
+                        border: "solid black 2px",
+                        padding: "20px",
+                        backgroundColor: "aqua",
+                    }
+                },
+            h2);
+
+            var P = React.createElement("p",null,"React Js is a Library");
+            var SecondDiv = React.createElement("div",{
+                style:{
+                    border: "double red 6px",
+                    padding:"20px",
+                    backgroundColor:"skyblue",
+                    marginTop:"15px"
+                }
+            },P);
+
+            var MainDivElement = React.createElement("div",{
+                style:{
+                    border: "dashed green 10px",
+                    padding: "10px",
+                    align:"center",
+                    
+                }
+            },[FristDiv, SecondDiv]);
+
+            ReactDOM.render(MainDivElement, document.querySelector("body"));
+            
+        </script>
+    </body>
+</html>

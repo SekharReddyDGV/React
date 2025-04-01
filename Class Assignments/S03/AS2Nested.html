@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Divs in Div</title>
+        <script src="https://unpkg.com/react@18/umd/react.development"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <script>
+            var P = React.createElement("p",null,"ManagoDB,ExpressJS,ReactJS,NodeJs");
+            var B = React.createElement("button",null,"click here");
+            var div1 = React.createElement("div",null,[P , B]);
+            var div2 = React.createElement("div", null, div1);
+            var h2 = React.createElement("h2",null,"MERN Stack Developer");
+            var MainDiv = React.createElement("div", {
+                style:{
+                    border: "solid green 6px",
+                    padding: "10px",
+                    align:"center",
+                    
+                }
+            }, [h2,div2]);
+
+            ReactDOM.render(MainDiv, document.querySelector("body"));
+
+        </script>
+    </body>
+</html>

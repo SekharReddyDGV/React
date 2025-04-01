@@ -1,0 +1,31 @@
+.container{
+    width: 800px;
+    height: 500px;
+    margin: 30px auto;
+    display: flex;
+    box-shadow: 0 0 10px black;
+    border-radius: 5%;
+   
+}
+.imageArea{
+    width: 40%;
+    height: 100%;
+}
+.imageArea img{
+    border-radius:5%;
+}
+.Details{
+    width: 60%;
+    padding: 20px;
+   }
+
+.info{
+    width:60%;
+}
+.btn{
+    margin: 20px 50px;
+    background-color: orange;
+    color: blue;
+    font-weight: 600;
+    border-radius: 15%;
+}

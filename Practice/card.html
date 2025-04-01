@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Card in react</title>
+        <script src="https://unpkg.com/react@18/umd/react.development"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+            function Createitems(Player,url){
+                var IMG = React.createElement("img",{
+                    src: url,
+                    width:250,
+                    height:300
+                });
+
+                var h3 = React.createElement("h3",null, Player);
+                
+                var card = React.createElement("div",{style:{
+                    boxShadow:"0 5px 10px black",
+                    textAlign:"center"
+                }},[IMG,h3]);
+
+                return card;
+            }
+            function container(){
+                var divcontain = React.createElement("div",{
+                    style:{
+                        display:"flex",
+                        justifyContent: "space-evenly",
+                    }},
+                    [Createitems("Virat Kohli","https://www.hindustantimes.com/static-content/1y/cricket-logos/players/virat-kohli.png"),
+                    Createitems("Rohit Sharma","https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Prime_Minister_Of_Bharat_Shri_Narendra_Damodardas_Modi_with_Shri_Rohit_Gurunath_Sharma_%28Cropped%29.jpg/220px-Prime_Minister_Of_Bharat_Shri_Narendra_Damodardas_Modi_with_Shri_Rohit_Gurunath_Sharma_%28Cropped%29.jpg"),
+                    Createitems("Yuvaraj Singh","https://wallpapercave.com/wp/wp4024289.jpg"),
+                    Createitems("MS Dhoni","https://wallpapersok.com/images/high/ms-dhoni-hd-for-india-rf6pwzqiuorefxpy.jpg")]);
+                return divcontain;
+            }
+            ReactDOM.render(container(),document.getElementById("root"));
+        </script>
+    </body>
+</html>

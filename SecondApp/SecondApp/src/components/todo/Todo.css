@@ -1,0 +1,14 @@
+.todo-container{
+    box-shadow: 0 0 10PX blue;
+    width:500px;
+    height:300px ;
+    margin:20px auto;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(rgb(151, 209, 214),rgb(202, 115, 115));
+    font-weight: bold;
+}
+
+.todo-container h2{
+    color: brown;
+}

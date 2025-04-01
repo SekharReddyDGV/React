@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar in html</title>
+    <style>
+        *{
+            text-decoration: None;
+            color: white;
+        }
+        .Navbar{
+            background-color: rgb(96, 96, 96);
+            display:flex ;
+            flex-direction: row;
+            justify-content: space-between;
+        }     
+        .Logo{
+            font-size: 60px;
+            margin-left: 50px;
+            padding:6px auto;
+        } 
+
+        ul{
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+        }
+        li{
+            display: inline-block;
+            list-style: none;
+            margin-right: 20px;
+        }
+        li a{
+            padding: 10px ;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="Navbar">
+        <div class="Logo"><a href="#">Logo</a></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Proudcts</a></li>
+            <li><a href="#">login</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+
+    </nav>
+    
+</body>
+</html>

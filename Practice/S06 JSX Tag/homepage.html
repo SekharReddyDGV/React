@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            margin: 0;
+        }
+      .header{
+        background-color: black;
+        height: 60px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }  
+
+      .main{
+        margin: 10px;
+      }
+      .footer{
+        margin: 0px;
+        background-color: black;
+        color:white;
+        height: 150px;
+        text-align: center;
+      }
+    </style>
+    <head>
+        <title>Create Heading</title>
+        <script src="https://unpkg.com/react@18/umd/react.development"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            function Header(){
+                return <div className="header">
+                    <h1>Heading</h1>
+                    </div>
+            }
+
+            function Main(){
+                return <div className="main">
+                    <h2>information </h2> <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci suscipit, quia animi assumenda eaque culpa, consequuntur ipsa cupiditate vitae rem. Tenetur, aut provident adipisci impedit quod voluptatibus et molestiae vel illo? Eos aut distinctio natus sunt minima vitae perferendis iste fugiat tempora ducimus maxime quia quod dolore porro ratione cumque laudantium, vel provident accusamus eligendi, architecto obcaecati fuga! Repudiandae totam esse quidem, ipsam inventore molestias pariatur reprehenderit, quo dolores asperiores corporis commodi temporibus aspernatur. A similique ullam doloremque. Ipsum ut esse iusto molestias neque recusandae dolor, maxime, quasi eligendi doloremque cum magni, numquam fugit. Tempora eos officia error at voluptates? Adipisci quidem a, dignissimos fuga dolorum, quo labore illum provident neque vel dolorem vitae repellat qui expedita itaque, enim sit temporibus ipsa alias debitis sequi nihil. Ducimus temporibus pariatur minus sequi, ipsam magnam aperiam nam dolorum cupiditate libero, eos corporis optio reiciendis quisquam architecto laboriosam voluptatibus aliquid aut iure?</p> <br/>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, amet vitae. Molestias earum optio ullam. Dignissimos animi hic fugit, eum, quas ipsa, labore saepe provident laborum dolorem iusto cupiditate atque nobis illum rem omnis ad ipsum reiciendis maxime quasi inventore vel cum quaerat obcaecati. Praesentium sapiente ex modi officiis! Modi similique ut esse doloremque deserunt distinctio quasi, delectus ipsum possimus laborum? Natus odit reiciendis aut dolore aliquid eius deleniti beatae dignissimos minima ipsa dolorum nemo laboriosam recusandae deserunt itaque accusamus voluptates nisi labore numquam, quas et laudantium eaque. Facere ipsam ipsum sit expedita exercitationem voluptatum, accusantium tempore corrupti repellendus, sint, alias placeat doloremque asperiores doloribus explicabo dignissimos necessitatibus earum suscipit praesentium veniam adipisci! Voluptatum, tempore. Praesentium reprehenderit minima in error odio sunt illo numquam voluptas eveniet officiis dignissimos doloremque nihil necessitatibus delectus voluptatem dolorem aspernatur ratione, minus vel. Tempore ab dolores saepe iste maiores sunt voluptatem, esse maxime ipsam vero quidem beatae amet, eum, doloremque in temporibus? Explicabo quo assumenda quia aspernatur voluptatem id nulla! Dolores ipsam, ipsum consequatur, officiis quis cupiditate id delectus assumenda eum quae itaque. Quaerat laudantium hic debitis? Enim temporibus facere voluptate eos iusto repellendus aperiam accusamus qui, cum nesciunt esse perferendis unde ratione aliquid obcaecati.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, amet vitae. Molestias earum optio ullam. Dignissimos animi hic fugit, eum, quas ipsa, labore saepe provident laborum dolorem iusto cupiditate atque nobis illum rem omnis ad ipsum reiciendis maxime quasi inventore vel cum quaerat obcaecati. Praesentium sapiente ex modi officiis! Modi similique ut esse doloremque deserunt distinctio quasi, delectus ipsum possimus laborum? Natus odit reiciendis aut dolore aliquid eius deleniti beatae dignissimos minima ipsa dolorum nemo laboriosam recusandae deserunt itaque accusamus voluptates nisi labore numquam, quas et laudantium eaque. Facere ipsam ipsum sit expedita exercitationem voluptatum, accusantium tempore corrupti repellendus, sint, alias placeat doloremque asperiores doloribus explicabo dignissimos necessitatibus earum suscipit praesentium veniam adipisci! Voluptatum, tempore. Praesentium reprehenderit minima in error odio sunt illo numquam voluptas eveniet officiis dignissimos doloremque nihil necessitatibus delectus voluptatem dolorem aspernatur ratione, minus vel. Tempore ab dolores saepe iste maiores sunt voluptatem, esse maxime ipsam vero quidem beatae amet, eum, doloremque in temporibus? Explicabo quo assumenda quia aspernatur voluptatem id nulla! Dolores ipsam, ipsum consequatur, officiis quis cupiditate id delectus assumenda eum quae itaque. Quaerat laudantium hic debitis? Enim temporibus facere voluptate eos iusto repellendus aperiam accusamus qui, cum nesciunt esse perferendis unde ratione aliquid obcaecati.</p>
+                    </div>
+            }
+            
+            function Footer(){
+                return <div className="footer">
+                    <h3>About the page</h3><br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolore aperiam possimus, omnis odio ipsum fuga distinctio deserunt. Possimus tempora dolorum voluptas vitae autem totam voluptatibus animi quos, numquam excepturi suscipit, ab, aperiam eligendi libero quasi facilis eveniet eos nihil? Recusandae, tenetur reprehenderit odio fugiat iure rerum odit. Culpa, amet?</p>
+                    </div>
+            }
+            function Page(){
+                return <div>
+                    <Header/>
+                    <Main/>
+                    <Footer/>
+                    </div>
+            }
+            ReactDOM.render(<Page/>,document.getElementById("root"));
+        </script>
+    </body>
+</html>

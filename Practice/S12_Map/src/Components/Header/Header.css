@@ -1,0 +1,37 @@
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    text-align: center;
+}
+.brandName {
+    width: 20%;
+    margin-top: 20px;
+}
+.navigationLinks {
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.actionBtn{
+    width: 25%;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding-right: 30px;
+}
+button{
+    padding: 5px 10px;
+    color: navy;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: lightsalmon;
+
+}

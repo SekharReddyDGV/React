@@ -1,0 +1,16 @@
+.container{
+    margin: 50px 200px;
+    box-shadow: 0 0 20px rgb(31, 10, 137);
+    width: 500px;
+    padding: 20px;
+}
+.display{
+    text-align: center;
+    margin: 10px auto;
+    color: green;
+
+}
+
+.container input{
+    margin: 15px;
+}

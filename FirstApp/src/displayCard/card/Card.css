@@ -1,0 +1,18 @@
+
+#card{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 10px black;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.CardContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    flex-wrap: wrap;
+}
